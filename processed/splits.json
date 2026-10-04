@@ -1,0 +1,30 @@
+{
+  "clock": "Iowa local time; rain column to use is precip_local",
+  "lookback_max_h": 336,
+  "horizon_max_h": 120,
+  "buffer_h": 456,
+  "rule": "origin t is valid for a split only if t-L >= split_start and t+H <= split_end (the whole window inside one split)",
+  "splits": {
+    "train": {
+      "start": "2011-10-01 00:00:00",
+      "end": "2016-09-30 23:00:00",
+      "first_origin": "2011-10-15 00:00:00",
+      "last_origin": "2016-09-25 23:00:00",
+      "n_origins": 43392
+    },
+    "val": {
+      "start": "2016-10-01 00:00:00",
+      "end": "2017-09-30 23:00:00",
+      "first_origin": "2016-10-15 00:00:00",
+      "last_origin": "2017-09-25 23:00:00",
+      "n_origins": 8304
+    },
+    "test": {
+      "start": "2017-10-01 00:00:00",
+      "end": "2018-09-30 23:00:00",
+      "first_origin": "2017-10-15 00:00:00",
+      "last_origin": "2018-09-25 23:00:00",
+      "n_origins": 8304
+    }
+  }
+}
